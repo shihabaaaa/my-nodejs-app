@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest 
+      commands:
+            - echo "Installing dependencies..."
+    pre_build:
+       commands:
+           - echo "Pre-build phase..."
+    build:
+        commands:
+            - echo "Building the application..."
+            - echo "we will run som"
+            - gre -fq "congrautions" index.html
+
+    post_build:
+       commands:
+        - echo "Post-build phase..."
